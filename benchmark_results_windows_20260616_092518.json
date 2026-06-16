@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-06-16T09:25:04.845881",
+  "os": {
+    "system": "Windows",
+    "release": "10",
+    "version": "10.0.19045",
+    "machine": "AMD64",
+    "hardware": {
+      "cpu": "",
+      "ram_gb": 8.0
+    }
+  },
+  "benchmarks": {
+    "cpu": {
+      "time_seconds": 0.99,
+      "operations": "10,000,000 multiplica\u00e7\u00f5es",
+      "method": "Python puro (multiplica\u00e7\u00e3o de inteiros)"
+    },
+    "memory": {
+      "avg_alloc_time_seconds": 0.0729,
+      "test_sizes": [
+        100000,
+        500000,
+        1000000
+      ],
+      "method": "Aloca\u00e7\u00e3o e libera\u00e7\u00e3o de listas em Python"
+    },
+    "disk": [
+      {
+        "size_mb": 100,
+        "read_time_seconds": 0.2,
+        "read_speed_mbps": 503.04
+      },
+      {
+        "size_mb": 500,
+        "read_time_seconds": 1.4,
+        "read_speed_mbps": 357.3
+      }
+    ],
+    "shell_scripts": {
+      "powershell": 1.811,
+      "batch": 1.399
+    },
+    "network": [
+      {
+        "url": "https://www.google.com",
+        "response_time_seconds": 0.78,
+        "status": 200
+      },
+      {
+        "url": "https://www.github.com",
+        "response_time_seconds": 0.2,
+        "status": 200
+      }
+    ]
+  }
+}
