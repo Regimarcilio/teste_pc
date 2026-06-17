@@ -1,0 +1,197 @@
+{
+  "timestamp": "2026-06-16T10:09:30.072058",
+  "os": {
+    "system": "Windows",
+    "release": "10",
+    "version": "10.0.19045",
+    "machine": "AMD64"
+  },
+  "hardware": {
+    "cpu": {
+      "cores_physical": 2,
+      "cores_logical": 2,
+      "max_frequency_mhz": 3500.0,
+      "name": ""
+    },
+    "memory": {
+      "total_gb": 7.45,
+      "available_gb": 1.98,
+      "used_gb": 5.47,
+      "percent_used": 73.4
+    },
+    "swap": {
+      "total_gb": 2.05,
+      "used_gb": 0.11,
+      "percent_used": 5.3,
+      "enabled": true
+    },
+    "disk": [
+      {
+        "mountpoint": "C:\\",
+        "total_gb": 442.68,
+        "used_gb": 66.75,
+        "free_gb": 375.94,
+        "percent_used": 15.1,
+        "filesystem": "NTFS"
+      },
+      {
+        "mountpoint": "D:\\",
+        "total_gb": 1.86,
+        "used_gb": 0.01,
+        "free_gb": 1.85,
+        "percent_used": 0.3,
+        "filesystem": "FAT32"
+      },
+      {
+        "mountpoint": "E:\\",
+        "total_gb": 488.28,
+        "used_gb": 4.13,
+        "free_gb": 484.15,
+        "percent_used": 0.8,
+        "filesystem": "NTFS"
+      },
+      {
+        "mountpoint": "H:\\",
+        "total_gb": 15.0,
+        "used_gb": 7.29,
+        "free_gb": 7.71,
+        "percent_used": 48.6,
+        "filesystem": "FAT32"
+      },
+      {
+        "mountpoint": "I:\\",
+        "total_gb": 15.0,
+        "used_gb": 14.47,
+        "free_gb": 0.53,
+        "percent_used": 96.5,
+        "filesystem": "FAT32"
+      }
+    ],
+    "disk_type": "SSD"
+  },
+  "benchmarks": {
+    "cpu": {
+      "single_thread": {
+        "time_seconds": 0.08,
+        "primes_found": 5133
+      },
+      "multi_thread": {
+        "time_seconds": 0.83,
+        "total_operations": 10416660416667500000,
+        "threads": 2
+      },
+      "stress_test": {
+        "duration_seconds": 4.99,
+        "cpu_utilization": 96.9
+      }
+    },
+    "memory": {
+      "allocation": [
+        {
+          "size_mb": 5,
+          "time_seconds": 0.0035,
+          "speed_mbps": 1433.95
+        },
+        {
+          "size_mb": 10,
+          "time_seconds": 0.0124,
+          "speed_mbps": 807.86
+        },
+        {
+          "size_mb": 25,
+          "time_seconds": 0.0319,
+          "speed_mbps": 783.39
+        },
+        {
+          "size_mb": 50,
+          "time_seconds": 0.0698,
+          "speed_mbps": 716.26
+        },
+        {
+          "size_mb": 100,
+          "time_seconds": 0.1294,
+          "speed_mbps": 772.54
+        }
+      ],
+      "swap_test": {
+        "status": "Concluído"
+      }
+    },
+    "disk": [
+      {
+        "size_mb": 50,
+        "write_time_seconds": 0.1,
+        "write_speed_mbps": 511.91,
+        "read_time_seconds": 0.23,
+        "read_speed_mbps": 220.19
+      },
+      {
+        "size_mb": 100,
+        "write_time_seconds": 0.18,
+        "write_speed_mbps": 557.77,
+        "read_time_seconds": 0.13,
+        "read_speed_mbps": 760.33
+      },
+      {
+        "size_mb": 200,
+        "write_time_seconds": 0.49,
+        "write_speed_mbps": 406.79,
+        "read_time_seconds": 0.57,
+        "read_speed_mbps": 350.75
+      }
+    ],
+    "swap": {},
+    "multitasking": {
+      "time_seconds": 0.47,
+      "threads": 6,
+      "avg_cpu_usage": 63.6,
+      "peak_cpu_usage": 63.6
+    },
+    "applications": {
+      "vscode_simulation": {
+        "time_seconds": 0.59,
+        "operations": {
+          "files_created": 20,
+          "search_operations": 20,
+          "file_reads": 50
+        },
+        "files_processed": 20
+      },
+      "mysql_simulation": {
+        "time_seconds": 0.0,
+        "operations": {
+          "queries": 500,
+          "records_processed": 6564
+        },
+        "queries_per_second": 906680.5
+      },
+      "combined": {
+        "time_seconds": 0.05,
+        "total_threads": 4
+      }
+    },
+    "io_system": {
+      "block_io": [
+        {
+          "block_size_kb": 1,
+          "write_speed_mbps": 498.74,
+          "read_speed_mbps": 619.0
+        },
+        {
+          "block_size_kb": 4,
+          "write_speed_mbps": 1012.55,
+          "read_speed_mbps": 764.05
+        },
+        {
+          "block_size_kb": 16,
+          "write_speed_mbps": 879.47,
+          "read_speed_mbps": 774.46
+        }
+      ],
+      "best_performance": {
+        "best_read_mbps": 774.46,
+        "best_write_mbps": 1012.55
+      }
+    }
+  }
+}

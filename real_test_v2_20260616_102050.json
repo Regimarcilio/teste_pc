@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-06-16T10:19:51.093417",
+  "scenarios": {
+    "real_workload": {
+      "total_duration": 49.32,
+      "components": {
+        "vscode": {
+          "time": 2.58,
+          "operations": 135,
+          "files": 15
+        },
+        "chrome": {
+          "time": 0.45,
+          "tabs": 12,
+          "memory_mb": 156.0
+        },
+        "mysql": {
+          "time": 45.72,
+          "queries": 2000,
+          "records": 60500
+        },
+        "multitasking": {
+          "time": 0.14,
+          "threads": 6
+        }
+      },
+      "system_state": {
+        "memory": {
+          "used_gb": 5.59,
+          "available_gb": 1.86,
+          "percent": 75.0
+        },
+        "swap": {
+          "used_gb": 0.15,
+          "percent": 7.4
+        },
+        "cpu_percent": 83.1,
+        "response_times": {
+          "file_open_small": 5.74,
+          "file_open_large": 28.93,
+          "cpu_calculation": 11.07,
+          "memory_allocation": 5.14,
+          "disk_io": 29.11
+        }
+      }
+    }
+  },
+  "diagnosis": {
+    "score": 45,
+    "grade": "\ud83d\udd34 CR\u00cdTICO",
+    "issues": [
+      "\ud83d\udea8 CR\u00cdTICO: Usando SWAP (0.2GB)",
+      "   \u2192 RAM insuficiente! O PC est\u00e1 usando DISCO como mem\u00f3ria",
+      "   \u2192 Isso \u00e9 100x mais LENTO que RAM!",
+      "   \u2192 SOLU\u00c7\u00c3O: AUMENTAR RAM para 16GB URGENTE",
+      "\ud83d\udea8 CR\u00cdTICO: CPU com 2 n\u00facleos - uso em 83.1%",
+      "   \u2192 Processador b\u00e1sico N\u00c3O aguenta multitarefa pesada",
+      "   \u2192 Solu\u00e7\u00e3o: Fechar apps, usar menos abas"
+    ],
+    "warnings": [
+      "\u26a0\ufe0f M\u00c9DIO: RAM em 75.0%",
+      "   \u2192 Use com cuidado, evite muitas abas abertas"
+    ],
+    "recommendations": [
+      "1. \ud83c\udd99 PRIORIDADE #1: AUMENTAR RAM para 16GB",
+      "   \u2192 Isso vai acabar com os travamentos",
+      "3. \ud83d\udcc9 Evite multitarefa pesada",
+      "   \u2192 Use apenas o essencial (VS Code OU Chrome, n\u00e3o ambos)",
+      "4. \ud83d\udeab Feche aplicativos em segundo plano",
+      "5. \ud83d\udd04 Use vers\u00f5es leves:",
+      "   \u2192 VS Codium em vez de VS Code",
+      "   \u2192 Firefox em vez de Chrome",
+      "   \u2192 SQLite em vez de MySQL (se poss\u00edvel)"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-06-16T10:14:56.719672",
+  "tests": {
+    "heavy_workload": {
+      "duration": 30.22,
+      "final_memory": {
+        "used_gb": 5.44,
+        "percent": 73.0,
+        "available_gb": 2.01
+      },
+      "final_swap": {
+        "used_gb": 0.15,
+        "percent": 7.1
+      },
+      "cpu_usage": 30.1
+    }
+  },
+  "diagnosis": {
+    "score": 70,
+    "grade": "\ud83d\udfe1 REGULAR",
+    "issues": []
+  }
+}
