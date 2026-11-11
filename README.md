@@ -47,15 +47,16 @@ Este projeto transforma sistemas de benchmark em **validadores de pré-requisito
 
 | Componente | Arquivo | Descrição |
 |------------|---------|-----------|
-| <img width="24" src="https://img.icons8.com/color/48/000000/python.png"> | `validator/hardware.py` | Detecção bare-metal de RAM, CPU, disco, UEFI |
-| <img width="24" src="https://img.icons8.com/color/48/000000/terraform.png"> | `validator/terraform_integration.py` | Formato de saída compatível Terraform |
-| <img width="24" src="https://img.icons8.com/color/48/000000/compressed.png"> | `dist/validate_preinstall` | Executável standalone 8MB (PyInstaller) |
-| <img width="24" src="https://img.icons8.com/color/48/000000/terraform-template.png"> | `terraform/main.tf` | Template para validação de 20 PCs remotos |
-| <img width="24" src="https://img.icons8.com/color/48/000000/shell.png"> | `scripts/bootstrap_install.sh` | Script de instalação automática com validação |
-| <img width="24" src="https://img.icons8.com/color/48/000000/python.png"> | `scripts/simulate_validation.py` | Simulador virtual para 20 PCs |
-| <img width="24" src="https://img.icons8.com/color/48/000000/test.png"> | `tests/test_checker.py` | Testes unitários (10/10 passando) |
-| <img width="24" src="https://img.icons8.com/color/48/000000/document.png"> | `docs/SRS.md` | Especificação de requisitos completa |
-| <img width="24" src="https://img.icons8.com/color/48/000000/terraform.png"> | `docs/PREINSTALL_TF.md` | Guia detalhado Terraform |
+|:---:|:---|:---:|
+| 🐍 Python | `validator/hardware.py` | Detecção bare-metal de RAM, CPU, disco, UEFI |
+| 🚀 Terraform | `validator/terraform_integration.py` | Formato de saída compatível Terraform |
+| 📦 Executável | `dist/validate_preinstall` | Executable standalone 8MB (PyInstaller) |
+| ☁️ Terraform | `terraform/main.tf` | Template para validação de 20 PCs remotos |
+| 💻 Shell | `scripts/bootstrap_install.sh` | Script de instalação automática com validação |
+| 🧪 Python | `scripts/simulate_validation.py` | Simulador virtual para 20 PCs |
+| ✅ Testes | `tests/test_checker.py` | Testes unitários (10/10 passando) |
+| 📄 Documento | `docs/SRS.md` | Especificação de requisitos completa |
+| 📚 Guia | `docs/PREINSTALL_TF.md` | Guia detalhado Terraform |
 
 ---
 
@@ -123,11 +124,12 @@ python3 scripts/simulate_validation.py
 
 | Componente | Mínimo | Recomendado | Teste |
 |------------|--------|-------------|-------|
-| <img width="16" src="https://img.icons8.com/color/48/000000/ram.png"> | **RAM** | 8 GB | `rf.001` |
-| <img width="16" src="https://img.icons8.com/color/48/000000/cpu.png"> | **CPU** | 2 núcleos | `rf.002` |
-| <img width="16" src="https://img.icons8.com/color/48/000000/hdd.png"> | **Disco** | 20 GB livre | `rf.003` |
-| <img width="16" src="https://img.icons8.com/color/48/000000/terminal.png"> | **SO** | Ubuntu 20.04+/Win10+/macOS 11+ | `rf.005` |
-| <img width="16" src="https://img.icons8.com/color/48/000000/python.png"> | **Python** | 3.10+ | `rf.006` |
+|:---:|:---|:---:|:---:|
+| 💾 RAM | **RAM** | 8 GB | `rf.001` |
+| 🖥️ CPU | **CPU** | 2 núcleos | `rf.002` |
+| 💿 Disco | **Disco** | 20 GB livre | `rf.003` |
+| 🐧 SO | **SO** | Ubuntu 20.04+/Win10+/macOS 11+ | `rf.005` |
+| 🐍 Python | **Python** | 3.10+ | `rf.006` |
 
 ### Exit Codes
 
