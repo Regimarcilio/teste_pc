@@ -32,6 +32,12 @@
 - `tests/test_checker.py` - Testes unitários
 - `docs/` - Documentação completa
 
+### 💿 ISO Bootável
+- `create_boot_iso.sh` - Script para criar ISO com isolinux
+- `create_minimal_iso.sh` - Script para ISO minimal
+- `docs/ISO_CREATION.md` - Guia para criação da ISO
+- **Disponível para download:** `validate_preinstall_boot.iso` (15-20MB)
+
 ### 🧪 Testes
 - 10 testes unitários implementados
 - Cobertura: 95.2%
