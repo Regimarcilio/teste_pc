@@ -1,0 +1,27 @@
+{
+  "hardware": {
+    "ram_gb": 0.0,
+    "cpu_cores": 2,
+    "cpu_model": "Intel(R) Celeron(R) CPU  J1800  @ 2.41GHz",
+    "disk_gb": 447.13,
+    "disk_type": "SSD",
+    "architecture": "x86_64",
+    "bios_vendor": "unknown",
+    "bios_version": "unknown",
+    "uefi": false
+  },
+  "checks": {
+    "ram": false,
+    "cpu": true,
+    "disk": true,
+    "disk_type": true,
+    "architecture": true,
+    "uefi": false
+  },
+  "score": 66.7,
+  "valid": true,
+  "recommendations": [
+    "RAM insuficiente (0.0GB). M\u00ednimo: 8GB",
+    "BIOS detectado. UEFI recomendado para UEFI Boot"
+  ]
+}

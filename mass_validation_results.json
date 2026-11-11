@@ -1,0 +1,188 @@
+{
+  "total_pcs": 20,
+  "approved_count": 20,
+  "majority_approved": true,
+  "pcs": [
+    {
+      "id": "pc_001",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 16,
+      "cpu_cores": 8,
+      "disk_gb": 512,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_002",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 16,
+      "cpu_cores": 8,
+      "disk_gb": 512,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_003",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 8,
+      "cpu_cores": 4,
+      "disk_gb": 256,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_004",
+      "valid": true,
+      "score": 66.7,
+      "ram_gb": 4,
+      "cpu_cores": 2,
+      "disk_gb": 128,
+      "checks_passed": 4
+    },
+    {
+      "id": "pc_005",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 16,
+      "cpu_cores": 8,
+      "disk_gb": 512,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_006",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 16,
+      "cpu_cores": 8,
+      "disk_gb": 512,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_007",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 16,
+      "cpu_cores": 8,
+      "disk_gb": 512,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_008",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 16,
+      "cpu_cores": 8,
+      "disk_gb": 512,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_009",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 8,
+      "cpu_cores": 4,
+      "disk_gb": 256,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_010",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 8,
+      "cpu_cores": 4,
+      "disk_gb": 256,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_011",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 16,
+      "cpu_cores": 8,
+      "disk_gb": 512,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_012",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 16,
+      "cpu_cores": 8,
+      "disk_gb": 512,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_013",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 16,
+      "cpu_cores": 8,
+      "disk_gb": 512,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_014",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 16,
+      "cpu_cores": 8,
+      "disk_gb": 512,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_015",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 16,
+      "cpu_cores": 8,
+      "disk_gb": 512,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_016",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 8,
+      "cpu_cores": 4,
+      "disk_gb": 256,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_017",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 8,
+      "cpu_cores": 4,
+      "disk_gb": 256,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_018",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 16,
+      "cpu_cores": 8,
+      "disk_gb": 512,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_019",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 16,
+      "cpu_cores": 8,
+      "disk_gb": 512,
+      "checks_passed": 6
+    },
+    {
+      "id": "pc_020",
+      "valid": true,
+      "score": 100.0,
+      "ram_gb": 16,
+      "cpu_cores": 8,
+      "disk_gb": 512,
+      "checks_passed": 6
+    }
+  ],
+  "validation_timestamp": "2026-11-16T00:00:00"
+}

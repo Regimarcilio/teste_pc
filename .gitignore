@@ -1,0 +1,40 @@
+# .gitignore para projeto de validação de hardware
+# PyInstaller
+build/
+*.spec
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+
+# Testes
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Executáveis
+*.exe
+*.dll
+*.dylib
+
+# Logs
+*.log
+
+# Dados temporários
+terraform_validation_report.json
+mass_validation_results.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Manter estes arquivos importantes
+!requirements.txt
+!dist/validate_preinstall
