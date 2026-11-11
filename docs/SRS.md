@@ -120,29 +120,77 @@ CASO CONTRÁRIO → SUCESSO
 
 ## 7. Análise de Cenários
 
-### Cenário 1: Máquina com 4GB RAM (Configuração Atual)
-**Entrada**: 4GB RAM, 15GB disco, 2 núcleos, Python 3.9
-**Saída**: ERRO - "RAM insuficiente (4GB/8GB requerido). Instale mais memória."
+### Cenário 1: PC com Hardware Adequado (Nova Máquina)
+**Entrada**: 16GB RAM, 512GB SSD, 8 núcleos, x86_64, UEFI
+**Saída**: SUCESSO - Score: 100/100, "Sistema apto para instalação"
 
-### Cenário 2: Máquina Nova
-**Entrada**: 16GB RAM, 200GB disco, 8 núcleos, Python 3.11
-**Saída**: SUCESSO - "Sistema compatível. Pronto para desenvolvimento."
+### Cenário 2: PC com Hardware Mínimo
+**Entrada**: 8GB RAM, 20GB SSD, 2 núcleos, x86_64, BIOS
+**Saída**: SUCESSO - Score: 83.3/100, "Sistema apto com recomendações"
 
-### Cenário 3: Máquina Mac antiga
-**Entrada**: macOS 10.15, 8GB RAM
-**Saída**: ERRO - "macOS 11+ requerido.Atualize ou use alternative."
+### Cenário 3: PC Rejeitado (Hardware Insuficiente)
+**Entrada**: 4GB RAM, 128GB HDD, 2 núcleos, x86_64, BIOS
+**Saída**: REJEITADO - Score: 66.7/100, "RAM insuficiente (4GB/8GB mínimo)"
 
----
-
-## 8. Próximos Passos
-
-1. **Fase 1**: Criar estrutura `validator/` com módulos
-2. **Fase 2**: Implementar funções de verificação
-3. **Fase 3**: Criar CLI com argparse
-4. **Fase 4**: Gerar documentação e instalação
-5. **Fase 5**: Testes automatizados
+### Cenário 4: Validação Bare-Metal (sem SO instalado)
+**Entrada**: Sistema bootado via SystemRescueCD/USBDRIVE
+**Saída**: Executa detect_bare_metal() via /proc, /sys, dmidecode
+**Score 0-100** → Decisão de instalação automática via Terraform
 
 ---
 
-*Documento criado: 2026-06-16*
-*Versão: 1.0*
+## 8. Arquitetura de Validação Terraform (20 PCs)
+
+### Fluxo de Validação em Massa
+```
+Boot PXE/USB → validate_preinstall → SSH → Terraform → Decisão
+```
+
+### Exit Codes
+| Código | Significado | Ação Terraform |
+|--------|-------------|----------------|
+| 0 | ✅ Sucesso | Instala SO automática |
+| 1 | ❌ Rejeitado | Skip, gera alerta |
+| 2 | ⚠️ Aviso | Instala com recomendações |
+
+### Saída Terraform
+```bash
+_VALIDATION_SCORE = 100.0
+_VALIDATION_VALID = true
+_VALIDATION_RAM_GB = 16.0
+_VALIDATION_CPU_CORES = 8
+_VALIDATION_DISK_GB = 512.0
+_VALIDATION_ARCH = 'x86_64'
+_VALIDATION_UEFI = true
+_VALIDATION_FAILED_CHECKS = []
+```
+
+---
+
+## 9. Próximos Passos
+
+1. **Fase 1**: ✅ Criar estrutura `validator/` com módulos - CONCLUÍDO
+2. **Fase 2**: ✅ Implementar funções de verificação bare-metal - CONCLUÍDO
+3. **Fase 3**: ✅ Criar CLI com argparse e PyInstaller - CONCLUÍDO
+4. **Fase 4**: ✅ Gerar documentação e templates Terraform - CONCLUÍDO
+5. **Fase 5**: Executar validação real em 20 PCs físicos
+6. **Fase 6**: Configurar PXE boot (DHCP/TFTP) para deploy em massa
+7. **Fase 7**: Validar integração com pipeline de instalação do SO
+
+---
+
+## 10. Arquivos Entregues
+
+| Arquivo | Função |
+|---------|--------|
+| `validator/hardware.py` | Detecção bare-metal de hardware |
+| `validator/terraform_integration.py` | Saída compatível Terraform |
+| `dist/validate_preinstall` | Executável standalone (Linux) |
+| `terraform/main.tf` | Template para 20 PCs |
+| `scripts/bootstrap_install.sh` | Script de instalação automática |
+| `tests/test_checker.py` | Testes unitários (10/10 passando) |
+
+---
+
+*Documento atualizado: 2026-11-16*
+*Versão: 1.1 (bare-metal + Terraform)*
