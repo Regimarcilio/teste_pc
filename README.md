@@ -172,6 +172,41 @@ flowchart TD
 
 ---
 
+## 💿 ISO Bootável
+
+### 🚀 Gerar ISO
+
+```bash
+# ISO completa com menu
+./create_boot_iso.sh
+
+# ISO minimal
+./create_minimal_iso.sh
+```
+
+### 📦 Conteúdo da ISO
+
+- Validador bare-metal 8MB
+- Menu de boot ISOLINUX
+- Compatível com USB e PXE
+- Ideal para 20 PCs em massa
+
+### 🎯 Uso
+
+```bash
+# Boot via USB
+dd if=validate_preinstall_boot.iso of=/dev/sdX
+
+# Boot via PXE
+# Colocar ISO no TFTP server
+```
+
+### 📚 Guia Completo
+
+Veja `docs/ISO_CREATION.md` para detalhes.
+
+---
+
 ## 🧪 Testes e Cobertura
 
 ### Executar Testes
