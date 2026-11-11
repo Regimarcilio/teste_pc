@@ -8,9 +8,8 @@
 <br>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/version-1.1-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="Version">
   <img src="https://img.shields.io/badge/status-concluído-success" alt="Status">
-  <img>
   <img src="https://img.shields.io/badge/licença-MIT-purple" alt="License">
   <img src="https://img.shields.io/badge/última%20atualização-2026--11--16-orange" alt="Last Update">
 </div>
